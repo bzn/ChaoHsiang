@@ -8,11 +8,27 @@ namespace Kino
     [ExecuteInEditMode]
     public class Tube : MonoBehaviour
     {
+        
         #region Editable attributes
 
-        [SerializeField, Range(0, 1)] public float _bleeding = 0.5f;
-        [SerializeField, Range(0, 1)] public float _fringing = 0.5f;
-        [SerializeField, Range(0, 1)] public float _scanline = 0.5f;
+        public float bleeding {
+            get { return _bleeding; }
+            set { _bleeding = value; }
+        }
+
+        public float fringing {
+            get { return _fringing; }
+            set { _fringing = value; }
+        }
+
+        public float scanline {
+            get { return _scanline; }
+            set { _scanline = value; }
+        }
+
+        [SerializeField, Range(0, 1)]  float _bleeding = 0.5f;
+        [SerializeField, Range(0, 1)]  float _fringing = 0.5f;
+        [SerializeField, Range(0, 1)]  float _scanline = 0.5f;
 
         #endregion
 
