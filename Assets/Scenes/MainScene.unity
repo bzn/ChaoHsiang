@@ -1069,6 +1069,95 @@ Transform:
   m_Father: {fileID: 1207348197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &142567505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 142567506}
+  - component: {fileID: 142567507}
+  m_Layer: 0
+  m_Name: Curve Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142567506
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142567505}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1926235959}
+  m_Father: {fileID: 1241576545}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142567507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142567505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee29e68f81b83642bee1811dd4e7925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedStatus: 0
+  ordinal: 0
+  canOptimize: 1
+  PlaybackMode: 3
+--- !u!1 &149761239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 149761240}
+  - component: {fileID: 149761241}
+  m_Layer: 0
+  m_Name: Actor Track Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &149761240
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149761239}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 663746599}
+  m_Father: {fileID: 1353110793}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149761241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149761239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f721a7f4a938be4196ba9be816a39d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ordinal: 5
+  canOptimize: 1
+  actor: {fileID: 1424992424}
 --- !u!1 &156273483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,6 +2445,51 @@ Transform:
   m_Father: {fileID: 1900402674}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &300253532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 300253533}
+  - component: {fileID: 300253534}
+  m_Layer: 0
+  m_Name: Curve Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &300253533
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300253532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 340335256}
+  m_Father: {fileID: 460618665}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300253534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300253532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee29e68f81b83642bee1811dd4e7925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedStatus: 0
+  ordinal: 0
+  canOptimize: 1
+  PlaybackMode: 3
 --- !u!1 &318570343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2794,91 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &340335255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 340335256}
+  - component: {fileID: 340335257}
+  m_Layer: 0
+  m_Name: Curve Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340335256
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340335255}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 300253533}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340335257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340335255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835ed7cc2c1999349b0593e8c6a509cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firetime: 7.245419
+  duration: 62.592655
+  curveData:
+  - Type: Scroller
+    PropertyName: rollSpeed
+    IsProperty: 1
+    PropertyType: 2
+    Curve1:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 7.245419
+        value: 7.5390625
+        inSlope: 0.72491866
+        outSlope: 0.72491866
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 69.83807
+        value: 101.03333
+        inSlope: 4.083169
+        outSlope: 4.083169
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve2:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve3:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve4:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  editorRevertMode: 0
+  runtimeRevertMode: 0
 --- !u!1 &345195213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,6 +3657,135 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 437179167}
   m_Mesh: {fileID: 4300080, guid: 3887865b129f2574baf7d8b4b7156a81, type: 3}
+--- !u!1 &460618664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 460618665}
+  - component: {fileID: 460618666}
+  m_Layer: 0
+  m_Name: Actor Track Group 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460618665
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460618664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 300253533}
+  m_Father: {fileID: 1353110793}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &460618666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460618664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f721a7f4a938be4196ba9be816a39d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ordinal: 7
+  canOptimize: 1
+  actor: {fileID: 1820011943}
+--- !u!1 &467084777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 467084778}
+  - component: {fileID: 467084779}
+  m_Layer: 0
+  m_Name: Curve Clip 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467084778
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467084777}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 663746599}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &467084779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 467084777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835ed7cc2c1999349b0593e8c6a509cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firetime: 6.9146595
+  duration: 62.592655
+  curveData:
+  - Type: Scroller
+    PropertyName: rollSpeed
+    IsProperty: 1
+    PropertyType: 2
+    Curve1:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 6.9146595
+        value: 7.5390625
+        inSlope: 0.72491866
+        outSlope: 0.72491866
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 69.50732
+        value: 101.03333
+        inSlope: 4.083169
+        outSlope: 4.083169
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve2:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve3:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve4:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  editorRevertMode: 0
+  runtimeRevertMode: 0
 --- !u!1 &473893958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,6 +5403,51 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &663746598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 663746599}
+  - component: {fileID: 663746600}
+  m_Layer: 0
+  m_Name: Curve Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &663746599
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663746598}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 467084778}
+  m_Father: {fileID: 149761240}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &663746600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663746598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee29e68f81b83642bee1811dd4e7925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedStatus: 0
+  ordinal: 0
+  canOptimize: 1
+  PlaybackMode: 3
 --- !u!1 &664400242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5623,7 +6016,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 784409717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 543ddbe12367a4899b011d43ef41f357, type: 3}
   m_Name: 
@@ -8059,6 +8452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc192c81a9e45e541879441141dafecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &1103346329
 GameObject:
   m_ObjectHideFlags: 0
@@ -9029,6 +9423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc192c81a9e45e541879441141dafecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
 --- !u!23 &1200578754
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9370,6 +9765,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1241576544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1241576545}
+  - component: {fileID: 1241576546}
+  m_Layer: 0
+  m_Name: Actor Track Group 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241576545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1241576544}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 142567506}
+  m_Father: {fileID: 1353110793}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241576546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1241576544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f721a7f4a938be4196ba9be816a39d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ordinal: 6
+  canOptimize: 1
+  actor: {fileID: 1814360457}
 --- !u!1 &1243164560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9964,6 +10403,9 @@ Transform:
   - {fileID: 542593248}
   - {fileID: 1476424419}
   - {fileID: 1935049919}
+  - {fileID: 149761240}
+  - {fileID: 1241576545}
+  - {fileID: 460618665}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10593,6 +11035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc192c81a9e45e541879441141dafecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &1427554516
 GameObject:
   m_ObjectHideFlags: 0
@@ -13438,6 +13881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc192c81a9e45e541879441141dafecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &1819269795
 GameObject:
   m_ObjectHideFlags: 0
@@ -13553,6 +13997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc192c81a9e45e541879441141dafecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &1820838031
 GameObject:
   m_ObjectHideFlags: 0
@@ -14390,6 +14835,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916285850}
   m_Mesh: {fileID: 4300034, guid: 3887865b129f2574baf7d8b4b7156a81, type: 3}
+--- !u!1 &1926235958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1926235959}
+  - component: {fileID: 1926235960}
+  m_Layer: 0
+  m_Name: Curve Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1926235959
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926235958}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 142567506}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1926235960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926235958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835ed7cc2c1999349b0593e8c6a509cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firetime: 7.245419
+  duration: 62.592655
+  curveData:
+  - Type: Scroller
+    PropertyName: rollSpeed
+    IsProperty: 1
+    PropertyType: 2
+    Curve1:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 7.245419
+        value: 7.5390625
+        inSlope: 0.72491866
+        outSlope: 0.72491866
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 69.83807
+        value: 101.03333
+        inSlope: 4.083169
+        outSlope: 4.083169
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve2:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve3:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve4:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  editorRevertMode: 0
+  runtimeRevertMode: 0
 --- !u!1 &1935049918
 GameObject:
   m_ObjectHideFlags: 0
