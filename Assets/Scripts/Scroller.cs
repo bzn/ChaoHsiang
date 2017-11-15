@@ -2,8 +2,13 @@
 
 public class Scroller : MonoBehaviour
 {
+
+    public float rollSpeed {
+            get { return speed; }
+            set { speed = value; }
+        }
     private float count = 3;
-    private float speed = 100;
+    [SerializeField, Range(0, 200)] private float speed = 10;
     private float wrapPoint = 400;
     private float position;
 
