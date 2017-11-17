@@ -1062,6 +1062,7 @@ GameObject:
   - component: {fileID: 157897818}
   - component: {fileID: 157897817}
   - component: {fileID: 157897824}
+  - component: {fileID: 157897825}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1082,8 +1083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _threshold: 0.8
   _softKnee: 0.5
-  _radius: 2.5
-  _intensity: 0.8
+  _radius: 7
+  _intensity: 7
   _highQuality: 1
   _antiFlicker: 1
   _shader: {fileID: 4800000, guid: 5a711a01011934ebcb58ef5ad52159d6, type: 3}
@@ -1159,7 +1160,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -1195,10 +1196,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4ab9821096c489f84e50f35b7b9644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startDistance: 60
+  _startDistance: 300
   _useRadialDistance: 0
   _fadeToSkybox: 1
   _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
+--- !u!114 &157897825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157897816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d901ddf32d7c84ed4b0f84623ef3a7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _intensity: 1
+  _radius: 0.3
+  _sampleCount: 2
+  _sampleCountValue: 24
+  _downsampling: 0
+  _occlusionSource: 2
+  _ambientOnly: 0
+  _aoShader: {fileID: 4800000, guid: 7541b5f18b1224a81927d8b1184b122b, type: 3}
+  _quadMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &159479556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6012,7 +6033,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 784409717}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 543ddbe12367a4899b011d43ef41f357, type: 3}
   m_Name: 
@@ -8914,7 +8935,7 @@ MonoBehaviour:
   _interpolator:
     _interpolationType: 0
     _interpolationSpeed: 10
-  _amplitude: 300
+  _amplitude: 600
   _bias: 0
   _outputEvent:
     m_PersistentCalls:
@@ -9617,7 +9638,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2111905614}
   _minValue: 0
   _maxValue: 1
-  _value: 0
+  _value: 0.5
   _graphic: {fileID: 2111905614}
   _target: {fileID: 620989945}
 --- !u!1 &1229780150
