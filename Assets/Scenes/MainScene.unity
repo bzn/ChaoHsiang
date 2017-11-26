@@ -7934,6 +7934,7 @@ GameObject:
   - component: {fileID: 157897818}
   - component: {fileID: 157897826}
   - component: {fileID: 157897817}
+  - component: {fileID: 157897830}
   - component: {fileID: 157897824}
   - component: {fileID: 157897825}
   - component: {fileID: 157897828}
@@ -8234,6 +8235,19 @@ MonoBehaviour:
   _axialShift: 0.3
   _axialQuality: 1
   _shader: {fileID: 4800000, guid: 4e3f6504698a346cb971f9ab5286fca9, type: 3}
+--- !u!114 &157897830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157897816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resolution: 1
+  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!1 &159479556
 GameObject:
   m_ObjectHideFlags: 0
@@ -16171,6 +16185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066887273}
   - component: {fileID: 1066887272}
+  - component: {fileID: 1066887271}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -16178,6 +16193,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1066887271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066887270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SampleCount: 8
+  ScatteringCoef: 0.5
+  ExtinctionCoef: 0.01
+  SkyboxExtinctionCoef: 0.9
+  MieG: 0.1
+  HeightFog: 0
+  HeightScale: 0.1
+  GroundLevel: 0
+  Noise: 1
+  NoiseScale: 0.015
+  NoiseIntensity: 1
+  NoiseIntensityOffset: 0.3
+  NoiseVelocity: {x: 3, y: 3}
+  MaxRayLength: 400
 --- !u!108 &1066887272
 Light:
   m_ObjectHideFlags: 0
