@@ -10,21 +10,41 @@ ModelImporter:
     100004: Shaft
     100006: //RootNode
     100008: Spike
+    100010: Disc
+    100012: Icosphere
+    100014: Ring1
+    100016: Ring2
     400000: Box
     400002: ipr_camera
     400004: Shaft
     400006: //RootNode
     400008: Spike
+    400010: Disc
+    400012: Icosphere
+    400014: Ring1
+    400016: Ring2
     2000000: ipr_camera
     2300000: Box
     2300002: Shaft
     2300004: Spike
+    2300006: Disc
+    2300008: Icosphere
+    2300010: Ring1
+    2300012: Ring2
     3300000: Box
     3300002: Shaft
     3300004: Spike
+    3300006: Disc
+    3300008: Icosphere
+    3300010: Ring1
+    3300012: Ring2
     4300000: Box
     4300002: Spike
     4300004: Shaft
+    4300006: Icosphere
+    4300008: Ring1
+    4300010: Ring2
+    4300012: Disc
   materials:
     importMaterials: 1
     materialName: 0
