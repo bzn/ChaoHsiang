@@ -27,7 +27,7 @@ using Klak.VectorMathExtension;
 namespace Klak.Math
 {
     /// Exponential interpolation
-    static class ETween
+    public static class ETween
     {
         #region Static Functions
 
