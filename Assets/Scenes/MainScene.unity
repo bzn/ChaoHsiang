@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.053354792, g: 0.053010102, b: 0.06371236, a: 1}
+  m_IndirectSpecularColor: {r: 0.002899442, g: 0.0028807644, b: 0.003462235, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -139,6 +139,51 @@ Transform:
   m_Father: {fileID: 1089038728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5003953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 5003954}
+  - component: {fileID: 5003955}
+  m_Layer: 0
+  m_Name: Curve Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5003954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5003953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 161291698}
+  m_Father: {fileID: 685169887}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5003955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5003953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee29e68f81b83642bee1811dd4e7925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedStatus: 0
+  ordinal: 0
+  canOptimize: 1
+  PlaybackMode: 3
 --- !u!1 &15334116
 GameObject:
   m_ObjectHideFlags: 0
@@ -8231,6 +8276,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 159479556}
   m_Mesh: {fileID: 4300076, guid: 3887865b129f2574baf7d8b4b7156a81, type: 3}
+--- !u!1 &161291697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 161291698}
+  - component: {fileID: 161291699}
+  m_Layer: 0
+  m_Name: Curve Clip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161291698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161291697}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5003954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161291699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161291697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835ed7cc2c1999349b0593e8c6a509cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firetime: 0
+  duration: 49.688755
+  curveData:
+  - Type: Lattice
+    PropertyName: noiseElevation
+    IsProperty: 1
+    PropertyType: 2
+    Curve1:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0.51042366
+        outSlope: 0.51042366
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 49.688755
+        value: 26.458334
+        inSlope: 0.62611985
+        outSlope: 0.62611985
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve2:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve3:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    Curve4:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  editorRevertMode: 0
+  runtimeRevertMode: 0
 --- !u!1 &174117366
 GameObject:
   m_ObjectHideFlags: 0
@@ -9354,6 +9484,38 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 224493180206678020, guid: dc52eb673f36344a1b21a125854191fe,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224710765285428792, guid: dc52eb673f36344a1b21a125854191fe,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960122577357846, guid: dc52eb673f36344a1b21a125854191fe, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230016112923288, guid: dc52eb673f36344a1b21a125854191fe,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224784535558841674, guid: dc52eb673f36344a1b21a125854191fe,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1682880954377604, guid: dc52eb673f36344a1b21a125854191fe, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374144553192988, guid: dc52eb673f36344a1b21a125854191fe, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc52eb673f36344a1b21a125854191fe, type: 2}
   m_IsPrefabParent: 0
@@ -9828,7 +9990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f12cb6e816d52340928f63f1b02f1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -192, y: -420}
+  _wiringNodePosition: {x: -60, y: -396}
   _responseCurve:
     serializedVersion: 2
     m_Curve:
@@ -9960,7 +10122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &325540112
 MeshFilter:
   m_ObjectHideFlags: 8
@@ -13784,6 +13946,50 @@ MonoBehaviour:
   ordinal: 0
   canOptimize: 1
   PlaybackMode: 3
+--- !u!1 &685169886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 685169887}
+  - component: {fileID: 685169888}
+  m_Layer: 0
+  m_Name: GroundHeight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685169887
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685169886}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5003954}
+  m_Father: {fileID: 1353110793}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &685169888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685169886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f721a7f4a938be4196ba9be816a39d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ordinal: 13
+  canOptimize: 1
+  actor: {fileID: 1413361296}
 --- !u!1 &702717386
 GameObject:
   m_ObjectHideFlags: 0
@@ -13997,7 +14203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4aca5806d89554ea1754d3f877fd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: 84, y: 888}
+  _wiringNodePosition: {x: 156, y: 972}
   _targetTransform: {fileID: 1397778550}
   _addToOriginal: 1
 --- !u!4 &725358627
@@ -14925,7 +15131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f12cb6e816d52340928f63f1b02f1b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -192, y: -324}
+  _wiringNodePosition: {x: -48, y: -336}
   _responseCurve:
     serializedVersion: 2
     m_Curve:
@@ -16717,82 +16923,6 @@ Transform:
   m_Father: {fileID: 1832827109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1089072371
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1089072372}
-  - component: {fileID: 1089072373}
-  m_Layer: 0
-  m_Name: Osc Input
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1089072372
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1089072371}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.36912, y: 6.72908, z: -11.760254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1463358578}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1089072373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1089072371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebd1ae8719f5f4ed1b7365c706aa8660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -420, y: 24}
-  _address: /1/fader1
-  _interpolator:
-    _interpolationType: 2
-    _interpolationSpeed: 30
-  _bangEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Klak.Wiring.NodeBase+VoidEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  _onEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Klak.Wiring.NodeBase+VoidEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  _offEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Klak.Wiring.NodeBase+VoidEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  _valueEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1479266238}
-        m_MethodName: set_brightness
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Klak.Wiring.NodeBase+FloatEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1091036519
 GameObject:
   m_ObjectHideFlags: 0
@@ -18402,7 +18532,7 @@ GameObject:
   - component: {fileID: 1229172907}
   - component: {fileID: 1229172908}
   m_Layer: 0
-  m_Name: LatticeElevation
+  m_Name: LatticeLineColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18432,14 +18562,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25192fab7a3623945ae7847e45b0ffaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -456, y: -168}
+  _wiringNodePosition: {x: -756, y: 96}
   _interpolator:
     _interpolationType: 2
     _interpolationSpeed: 100
   _valueEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1612458771}
+      - m_Target: {fileID: 1494967309}
         m_MethodName: set_input
         m_Mode: 0
         m_Arguments:
@@ -19805,7 +19935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28fb8e5f0356b5459f21ad2b6952a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -96, y: 972}
+  _wiringNodePosition: {x: -84, y: 984}
   _baseVector: {x: 0, y: -0.2, z: 0}
   _vectorEvent:
     m_PersistentCalls:
@@ -19878,6 +20008,7 @@ Transform:
   - {fileID: 1712713143}
   - {fileID: 588546490}
   - {fileID: 291465496}
+  - {fileID: 685169887}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20030,7 +20161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12de0eef0a2ebb4c912b4e35ba81f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -192, y: 756}
+  _wiringNodePosition: {x: -288, y: 768}
   _buttonDownEvent:
     m_PersistentCalls:
       m_Calls:
@@ -20704,49 +20835,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414653100}
---- !u!1 &1415838453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1415838454}
-  - component: {fileID: 1415838455}
-  m_Layer: 0
-  m_Name: Float Out
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1415838454
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1415838453}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.36912, y: 6.72908, z: -11.760254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1463358578}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1415838455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1415838453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a319229719231eb42a0f578b8f339e1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -84, y: -156}
-  _target: {fileID: 1413361298}
-  _propertyName: noiseElevation
 --- !u!1 &1424009707
 GameObject:
   m_ObjectHideFlags: 0
@@ -21079,11 +21167,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1229172907}
-  - {fileID: 1612458770}
-  - {fileID: 1415838454}
   - {fileID: 1890097307}
-  - {fileID: 1089072372}
   - {fileID: 1479266237}
+  - {fileID: 1494967308}
   m_Father: {fileID: 1453918635}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21197,7 +21283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1463358578}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1479266238
 MonoBehaviour:
@@ -21210,8 +21296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a163ee3cdea6cbf4ca2a23ee3f2c09c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -227, y: 63}
-  _hue: 0
+  _wiringNodePosition: {x: -216, y: 72}
+  _hue: 0.6
   _saturation: 1
   _brightness: 1
   _alpha: 1
@@ -21411,6 +21497,86 @@ MonoBehaviour:
   ordinal: 0
   canOptimize: 1
   PlaybackMode: 3
+--- !u!1 &1494967307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1494967308}
+  - component: {fileID: 1494967309}
+  m_Layer: 0
+  m_Name: ColorGain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494967308
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494967307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 60.36912, y: 6.72908, z: -11.760254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1463358578}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494967309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494967307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f12cb6e816d52340928f63f1b02f1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wiringNodePosition: {x: -540, y: 108}
+  _responseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _interpolator:
+    _interpolationType: 0
+    _interpolationSpeed: 10
+  _amplitude: 1
+  _bias: 0
+  _outputEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1479266238}
+        m_MethodName: set_brightness
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Klak.Wiring.NodeBase+FloatEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1513725296
 GameObject:
   m_ObjectHideFlags: 0
@@ -22250,86 +22416,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611277015}
   m_Mesh: {fileID: 4300036, guid: 3887865b129f2574baf7d8b4b7156a81, type: 3}
---- !u!1 &1612458769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1612458770}
-  - component: {fileID: 1612458771}
-  m_Layer: 0
-  m_Name: Float Filter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1612458770
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612458769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.36912, y: 6.72908, z: -11.760254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1463358578}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1612458771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1612458769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f12cb6e816d52340928f63f1b02f1b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -264, y: -168}
-  _responseCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _interpolator:
-    _interpolationType: 0
-    _interpolationSpeed: 10
-  _amplitude: 25
-  _bias: 0
-  _outputEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1415838455}
-        m_MethodName: set_input
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: Klak.Wiring.NodeBase+FloatEvent, Assembly-CSharp-firstpass, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1612850287
 GameObject:
   m_ObjectHideFlags: 0
@@ -24701,7 +24787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097e1f4768de3d742bdcdf8e449a5b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -360, y: 252}
+  _wiringNodePosition: {x: -408, y: 264}
   _filterType: 3
   _autoGain: 0
   _internalGain: 6
@@ -25219,7 +25305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1463358578}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1890097308
 MonoBehaviour:
@@ -25232,7 +25318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74674d1592068f94aba72f5af393792c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: 0, y: 108}
+  _wiringNodePosition: {x: 24, y: 132}
   _target: {fileID: 1413361298}
   _propertyName: lineColor
 --- !u!1 &1900402673
@@ -26429,7 +26515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097e1f4768de3d742bdcdf8e449a5b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wiringNodePosition: {x: -396, y: 888}
+  _wiringNodePosition: {x: -456, y: 960}
   _filterType: 2
   _autoGain: 1
   _internalGain: 6
