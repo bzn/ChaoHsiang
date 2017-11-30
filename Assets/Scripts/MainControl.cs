@@ -38,6 +38,7 @@ public class MainControl : MonoBehaviour
     private void OnOpenCreditButtonClick()
     {
         creditUI.SetActive(true);
+        menuUI.SetActive(false);
     }
 
     private void OnCloseCreditButtonClick()
